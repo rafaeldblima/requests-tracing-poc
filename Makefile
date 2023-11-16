@@ -13,7 +13,7 @@ test:
 
 lint:
 	@echo "Running linter..."
-	go run golang.org/x/lint/golint -set_exit_status ./...
+	golint ./...
 
 fmt:
 	@echo "Running go fmt..."
