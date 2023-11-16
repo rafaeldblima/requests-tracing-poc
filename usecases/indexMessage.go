@@ -21,7 +21,7 @@ func NewMessageIndexer(client interfaces.ElasticsearchClientInterface) *MessageI
 func (mi *MessageIndexer) IndexMessage(ctx context.Context, message *domain.Message, indexName string) error {
 	documentJSON, err := json.Marshal(message)
 	if err != nil {
-		// Lida com o erro aqui
+		return err
 	}
 	err = mi.ElasticsearchClient.Index().
 		IndexDocument(ctx, indexName, string(documentJSON))

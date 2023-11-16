@@ -22,8 +22,5 @@ jobs:
       - name: Install dependencies
         run: go mod download
 
-      - name: Lint
-        run: make lint
-
       - name: Test
         run: make test

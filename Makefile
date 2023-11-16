@@ -13,7 +13,7 @@ test:
 
 lint:
 	@echo "Running linter..."
-	golint ./...
+	golangci-lint run
 
 fmt:
 	@echo "Running go fmt..."
