@@ -14,6 +14,6 @@ require (
 	github.com/elastic/elastic-transport-go/v8 v8.3.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/stretchr/objx v0.5.0 // indirect
+	github.com/stretchr/objx v0.5.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
